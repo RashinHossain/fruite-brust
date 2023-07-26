@@ -12,12 +12,132 @@
 </head>
 <body>
     <header>
-        <nav>
-            
+        <nav class="">
+            <div class="navbar bg-base-100">
+                <div>
+                    <ul class="flex gap-5 font-semibold p-16">
+                        <li>Home</li>
+                        <li>About US</li>
+                        <li>Shop</li>
+                        <li>All Fruites</li>
+                    </ul>
+                </div>
+                <div class="flex-1 pl-60">
+                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <div class="flex-none gap-2">
+                  <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                      </div>
+                    </label>
+                    <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
         </nav>
     </header>
 
     <main>
+<!-- deal of the day -->
+        <div class="m-36 flex gap-x-20 it">
+            <div>
+                <h2 class="font-bold text-5xl "> Deal of the day</h2>
+                <p class="text-base mt-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:52;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+            </div>
+        </div>
+<!-- cards need work-->
+<div class="flex mb-12 justify-center gap-10">
+    <div class="card w-64 bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions">
+            <button class="btn text-[#F85559]">Details</button>
+          </div>
+        </div>
+      </div>
+    <div class="card w-64 bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions">
+            <button class="btn text-[#F85559]">Details</button>
+          </div>
+        </div>
+      </div>
+    <div class="card w-64 bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions">
+            <button class="btn text-[#F85559]">Details</button>
+          </div>
+        </div>
+      </div>
+    <div class="card w-64 bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions">
+            <button class="btn text-[#F85559]">Details</button>
+          </div>
+        </div>
+      </div>
+</div>
 
     </main>
     <footer class="footer footer-center py-28  bg-[#121212] text-white text-base-content rounded">
