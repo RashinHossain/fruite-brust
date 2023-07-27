@@ -8,45 +8,35 @@
     <!-- Tailwind and Daisey -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
-        
+       
 </head>
 <body>
-    <header>
-        <nav class="">
-            <div class="navbar bg-base-100">
-                <div>
-                    <ul class="flex gap-5 font-semibold p-16">
-                        <li>Home</li>
-                        <li>About US</li>
-                        <li>Shop</li>
-                        <li>All Fruites</li>
-                    </ul>
-                </div>
-                <div class="flex-1 pl-60">
-                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                </div>
-                <div class="flex-none gap-2">
-                  <div class="form-control">
-                    <input type="text" placeholder="Search " class=" input input-bordered w-24 md:w-auto " />
-                  </div>
-                  <div class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                      
-                    </label>
-                    <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                      <li>
-                        <a class="justify-between">
-                          Profile
-                          <span class="badge">New</span>
-                        </a>
-                      </li>
-                      <li><a>Settings</a></li>
-                      <li><a>Logout</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-        </nav>
+    <header class="container mx-auto mb-14 mt-10">
+        <nav
+            class="bg-[#F85559] rounded-[600px] flex justify-between items-center py-6 px-10"
+         >
+            <div>
+               <ul class="flex gap-4 text-white text-sm font-normal">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">All Fruits</a></li>
+               </ul>
+            </div>
+            <div class="flex items-center">
+               <img class="w-12 h-12" src="./images/logo.png" alt="" />
+               <h1 class="text-2xl font-bold text-white">Fruit Burst</h1>
+            </div>
+            <div class="flex gap-2">
+               <div class="form-control w-64 h-8">
+                  <input
+                     type="text "
+                     placeholder="Search here" 
+                     class="input md:w-auto rounded-[50px] "
+                  />
+               </div>
+            </div>
+         </nav>
     </header>
 
     <main class="container mx-auto">
@@ -55,38 +45,74 @@
 
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
-              <img src="./images/banner1.png" class="w-full" />
+              <div>
+                <img src="./images/banner1.png" class="w-full rounded-2xl" />
+                <div class="flex absolute gap-20 max-h-60 bg-white -mt-32 ml-32 rounded-xl p-6 "> 
+                    <img src="./images/fruit1.png" alt="">
+                    <img src="./images/fruit2.png" alt="">
+                    <img src="./images/fruit3.png" alt="">
+                    <img src="./images/fruit4.png" alt="">
+                    <img src="./images/fruit5.png" alt="">
+                    
+                </div>
+              </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" class="btn btn-circle">❮</a> 
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
-              <img src="./images/banner2.png" class="w-full" />
+                <div>
+                    <img src="./images/banner2.png" class="w-full" />
+                    <div class="flex absolute gap-20 max-h-60 bg-white -mt-32 ml-32 rounded-xl p-6"> 
+                        <img src="./images/fruit1.png" alt="">
+                        <img src="./images/fruit2.png" alt="">
+                        <img src="./images/fruit3.png" alt="">
+                        <img src="./images/fruit4.png" alt="">
+                        <img src="./images/fruit5.png" alt="">
+                        
+                    </div>
+                  </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a> 
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide3" class="carousel-item relative w-full">
-              <img src="./images/banner3.png" class="w-full" />
+                <div>
+                    <img src="./images/banner3.png" class="w-full" />
+                    <div class="flex absolute gap-20 max-h-60 bg-white -mt-32 ml-32 rounded-xl p-6"> 
+                        <img src="./images/fruit1.png" alt="">
+                        <img src="./images/fruit2.png" alt="">
+                        <img src="./images/fruit3.png" alt="">
+                        <img src="./images/fruit4.png" alt="">
+                        <img src="./images/fruit5.png" alt="">
+                        
+                    </div>
+                  </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle">❮</a> 
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide4" class="carousel-item relative w-full">
-              <img src="./images/banner4.png" class="w-full" />
+                <div>
+                    <img src="./images/banner4.png" class="w-full" />
+                    <div class="flex absolute gap-20 max-h-60 bg-white -mt-32 ml-32 rounded-xl p-6"> 
+                        <img src="./images/fruit1.png" alt="">
+                        <img src="./images/fruit2.png" alt="">
+                        <img src="./images/fruit3.png" alt="">
+                        <img src="./images/fruit4.png" alt="">
+                        <img src="./images/fruit5.png" alt="">
+                        
+                    </div>
+                  </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" class="btn btn-circle">❮</a> 
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
           </div>
-
-
-
-
 
 
                     <!-- deal of the day -->
@@ -100,25 +126,25 @@
                 <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
-                        <span style="--value:15;"></span>
+                        <span style="--value:15;" ></span> <img src="./images/Frame (1).png" alt="">
                       </span>
                       days
                     </div> 
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
-                        <span style="--value:10;"></span>
+                        <span style="--value:10;"></span>  <img src="./images/Frame (1).png" alt="">
                       </span>
                       hours
                     </div> 
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
-                        <span style="--value:24;"></span>
+                        <span style="--value:24;"></span>  <img src="./images/Frame (1).png" alt="">
                       </span>
                       min
                     </div> 
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
-                        <span style="--value:52;"></span>
+                        <span style="--value:52;"></span>  <img src="./images/Frame (1).png" alt="">
                       </span>
                       sec
                     </div>
@@ -127,7 +153,7 @@
         </div>
 
 
-                    <!-- cards need work-->
+                    <!-- cards -->
 
 <div class="lg:flex  mb-12 justify-center gap-10">
     <div class="card w-64 bg-base-100 shadow-xl">
@@ -200,9 +226,59 @@
     <button class="btn btn-primary font-bold px-6 py-5 ">Show All</button>
 </div>
 
-<!-- Team Section -->
+<!-- Why Choose us -->
 
     
+    <h2 class="text-5xl font-bold text-center mt-32">Why Choose Us</h2>
+    <p class="mt-6 text-center w-3/6 mx-auto ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+    
+    <div class="flex gap-10 mt-14 pl-10 pr-10 items-center">
+        
+    <div>
+        <div>
+            <h3 class="text-2xl font-bold mb-5">Dedicated Team</h3>
+            <hr class="mb-4">
+            <p class="text-[#121212] mb-12">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+        </div>
+       
+        <div>
+            <h3 class="text-2xl font-bold mb-5">Fresh is Best</h3>
+            <hr class="mb-4">
+            <p  class="text-[#121212] mb-12">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+        </div>
+
+        <div>
+            <h3 class="text-2xl font-bold mb-5">Gift Certificates</h3> 
+            <hr class="mb-4">  
+            <p class="text-[#121212] mb-12">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+        </div>
+    </div>
+
+        <div>
+            <img src="./images/whychoose1.png" alt="">
+        </div>
+
+        <div>
+            <div>
+                <h3 class="text-2xl font-bold mb-5">Integrated Supplier</h3>
+                <hr class="mb-4">
+                <p class="text-[#121212] mb-12">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-5">Sustainable Practice</h3>
+                <hr class="mb-4">
+                <p class="text-[#121212] mb-12">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-5">The Benefits Only</h3>
+                <hr class="mb-4">
+                <p class="text-[#121212] mb-12">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+            </div>
+
+        </div>
+
+        
+     </div>
 
     </main>
     <footer class="footer footer-center py-28  bg-[#121212] text-white text-base-content rounded">
